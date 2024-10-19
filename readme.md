@@ -74,7 +74,7 @@ However, for cache-control no-store, both Safari and Firefox network-load style.
 
 ![No-Store](images/safari-with-no-store.png)
 
-###
+### Firefox no-store:
 
 ![No-Store](images/firefox-with-no-store.png)
 
