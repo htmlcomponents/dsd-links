@@ -79,3 +79,10 @@ However, for cache-control no-store, both Safari and Firefox network-load style.
 ![No-Store](images/firefox-with-no-store.png)
 
 Similar results in this [Code Sandbox example](https://q9yc7v.csb.app/), perhaps because Code Sandbox appears to set cache-control on css files to "private, max-age=0, no-cache, no-store".  In Chrome, style.css is loaded multiple times, but only once in Safari and Firefox.
+
+## Questions
+
+- Is this behavior a result of different interpretations of cache-control header?  See [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control): Note that no-cache does not mean "don't cache". no-cache allows caches to store a response but requires them to revalidate it before reuse. If the sense of "don't cache" that you want is actually "don't store", then no-store is the directive to use.
+- Are there other data points that confirm or contradict these observations?
+- Is there an official specification that describes correct expected behavior?
+- Can this behavior be tested in a WPT test?
