@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With no-store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>With no-store</h1>
+
+    <host-element>
+        <template shadowrootmode="open">
+          <link rel="stylesheet" href="style.css">
+          <h1>Shadow DOM #1</h1>
+        </template>
+      </host-element>
+
+      <host-element>
+        <template shadowrootmode="open">
+          <link rel="stylesheet" href="style.css">
+          <h1>Shadow DOM #2</h1>
+        </template>
+      </host-element>
+</body>
+</html>
